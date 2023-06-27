@@ -1,3 +1,11 @@
+@import url(./global/global.css);
+@import url(./global/header.css);
+
+/*utilidades*/
+@import url(./utilidades/componentes.css);
+/*home*/
+@import url(./home/home.css);
+
 :root {
   --c12: #000;
   --c11: #111111;
@@ -18,87 +26,4 @@
   --P3: #a66f00;
   --P2: #e4a30b;
   --P1: #ffbb00;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.header-bg {
-  background-color: var(--c12);
-}
-
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.header-menu a {
-  display: inline-block;
-  padding: 16px 0px;
-  color: var(--w);
-  font-size: 1.125rem;
-  font-family: Poppins;
-  line-height: 32px;
-  position: relative;
-}
-.header-menu a:after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0%;
-  background-color: var(--w);
-  margin-top: 4px;
-  transition: 0.3s;
-  position: absolute;
-}
-.header-menu a:hover:after {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
-  .header-menu a {
-    background: var(--c11);
-    padding: 12px 16px;
-    border-radius: 4px;
-  }
-  .header-menu a:hover {
-    background: var(--c10);
-  }
-  .header-menu a:after {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-  .header-menu a {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
 }
